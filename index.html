@@ -1,75 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="резюме, Дмитрий Улизько">
-  <meta name="description" content="Это резюме - Дмитрия Улизько">
-  <title>Ulizko Resume</title>
-</head>
-<body>
-  <img src="IMG/1.jpg" alt="Дмитрий Улизько" width="250">
-  <h1>Дмитрий Улизько</h1>
-  <p>Я только начал свой путь в мире <strong>програмирования и IT </strong>, 
-    но что можно сказать о перспективах мной выполненых работ? Правильно они все будут сделаны на <strong>высшем ровне и с душой!</strong></p>
-  <p> Обучение прохожу в онлайн школе  <em>Result.School</em> </p>
-  <p>
-    <h4>Мои хобби</h4>
-    <ul>
-      <li>Горные лыжи</li>
-      <li>Парашютный спорт</li>
-      <li>Дайвинг</li>
-      <li>ММА</li>
-    </ul>
-  </p>
-  <h4>Опыт работы</h4>
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>ЧВВМУ</td>
-        <td>Курсант</td>
-        <td>2012-2017</td>
-      </tr>
-      <tr>
-        <td>в/ч 43071</td>
-        <td>Командир группы</td>
-        <td>2017-по н.в.</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>
-    <h4>Список социальных сетей</h4>
-    <a href="https://vk.com/id325193282" target="_blank">VKontakte</a>
-  </p>
-  <h4>Связаться со мной</h4>
-  <form>
-  <div>
-    <label for="name"> Ваше имя: </label>
-    <input type="text" id="name" placeholder="Введите имя">
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="резюме, Дмитрий Улизько" />
+    <meta name="description" content="Это резюме - Дмитрия Улизько" />
+    <title>Ulizko Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="IMG/1.jpg" alt="Дмитрий Улизько" class="avatar" />
+        <div class="info-text">
+          <div class="name"><h1>Дмитрий Улизько</h1></div>
 
-  <div>
-    <label for="email"> Ваш email: </label>
-    <input type="email" id="email" placeholder="Введите email">
-  </div>
+          <p>
+            Я только начал свой путь в мире
+            <strong>програмирования и IT </strong>, но что можно сказать о перспективах мной
+            выполненых работ? Правильно они все будут сделаны на
+            <strong>высшем ровне и с душой!</strong>
+          </p>
+          <p>Обучение прохожу в онлайн школе <em>Result.School</em></p>
+        </div>
+      </div>
+      <div class="hobby">
+        <h2>Мои хобби</h2>
+        <ul class="list">
+          <li>Горные лыжи</li>
+          <li>Парашютный спорт</li>
+          <li>Дайвинг</li>
+          <li>ММА</li>
+        </ul>
+      </div>
 
-  <div>
-    <label for="massage"> Ваше сообщение: </label>
-    <br>
-    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Ведите сообщение..."></textarea>
-  </div>
+      <div class="card">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <thead>
+            <!-- <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr> -->
+          </thead>
+          <tbody>
+            <tr>
+              <td>ЧВВМУ</td>
+              <td>Курсант</td>
+              <td>2012-2017</td>
+            </tr>
+            <tr>
+              <td>в/ч 43071</td>
+              <td>Командир группы</td>
+              <td>2017-по н.в.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-  <div>
-    <button type="submit"> Отправить</button>
-  </div>
-</form>
-</body>
+      <div class="card">
+        <h2>Список социальных сетей</h2>
+        <a href="https://vk.com/id325193282" target="_blank">VKontakte</a>
+      </div>
+
+      <form class="form">
+        <h4>Связаться со мной</h4>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name"> Ваше имя: </label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+
+          <div class="form-group">
+            <label for="email"> Ваш email: </label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="massage"> Ваше сообщение: </label>
+          <textarea
+            name="massage"
+            id="massage"
+            cols="30"
+            rows="10"
+            placeholder="Ведите сообщение..."></textarea>
+        </div>
+
+        <div>
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

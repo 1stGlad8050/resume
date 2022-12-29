@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@1,300 & display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #2c2f35;
+  background-color: #d1cece;
+  margin-bottom: 120px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.avatar {
+  width: 300px;
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 25);
+}
+
+.info {
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+@media (max-width: 688px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.name {
+  text-align: center;
+}
+
+.info-text {
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(62, 69, 69);
+  margin: 0;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.hobby {
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(62, 69, 69);
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+.hobby h2 {
+  margin-bottom: 10px;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding-bottom: 15px;
+  padding-top: 1px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #2c2f35;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+}
+a:active {
+  color: cadetblue;
+}
+
+.btn {
+  background: antiquewhite;
+  padding: 15px 20px;
+  color: rgb(62, 69, 69);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn:hover {
+  opacity: 0.8;
+  color: orange;
+}
+
+.list {
+  padding: 0 20px;
+}
+.list li {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
+.table td {
+  padding-bottom: 10px;
+}
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: black;
+}
+
+.form {
+  /* background-color: antiquewhite;
+  border-radius: 5px; */
+  padding-left: 10px;
+}
+
+.form h4 {
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.form-row .form-group {
+  display: inline-block;
+  margin-right: 20px;
+  width: calc(50% - 20px);
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 688px) {
+  .form-row .form-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: black;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgb(160, 156, 156);
+  color: black;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
